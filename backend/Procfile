@@ -1,8 +1,1 @@
-# ==============================================================
-# backend/Procfile
-# ==============================================================
-# Railway reads this file to know HOW to start the backend.
-# $PORT is automatically set by Railway (usually 8000 or similar).
-# DO NOT change this file.
-# ==============================================================
-web: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+web: sh -c "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"
