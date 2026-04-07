@@ -1,0 +1,15 @@
+# ==============================================================
+# frontend/.streamlit/config.toml
+# ==============================================================
+# Streamlit configuration for production deployment.
+# Railway needs headless=true to run without a browser.
+# enableCORS=false allows the frontend to talk to the backend.
+# ==============================================================
+
+[server]
+headless = true               # run without opening a browser (required for Railway)
+enableCORS = false            # allow cross-origin requests from the backend
+enableXsrfProtection = false  # disable CSRF protection (ok for internal admin tool)
+
+[browser]
+gatherUsageStats = false      # don't send usage data to Streamlit

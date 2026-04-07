@@ -1,0 +1,8 @@
+# ==============================================================
+# frontend/Procfile
+# ==============================================================
+# Railway reads this file to know HOW to start the Streamlit app.
+# $PORT is automatically set by Railway.
+# DO NOT change this file.
+# ==============================================================
+web: streamlit run app.py --server.port $PORT --server.address 0.0.0.0

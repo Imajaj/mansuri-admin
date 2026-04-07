@@ -1,0 +1,35 @@
+# ============================================================
+# backend/requirements.txt
+# ============================================================
+# This file lists every Python package the backend needs.
+# Railway reads this file and installs everything automatically.
+#
+# HOW TO ADD A NEW PACKAGE:
+#   1. Add it here (e.g. pandas==2.2.2)
+#   2. Run: pip install -r requirements.txt  (locally)
+#   3. git commit + push → Railway auto-reinstalls
+# ============================================================
+
+# --- Web framework -------------------------------------------
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# --- Database ------------------------------------------------
+sqlalchemy==2.0.36
+alembic==1.14.0
+psycopg2-binary==2.9.10   # PostgreSQL driver (works with Supabase)
+
+# --- Data validation -----------------------------------------
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# --- Authentication ------------------------------------------
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==3.2.2              # MUST be 3.2.2 — newer versions break passlib
+
+# --- Utilities -----------------------------------------------
+python-multipart==0.0.12
+python-dotenv==1.0.1
+httpx==0.28.0
+email-validator==2.2.0

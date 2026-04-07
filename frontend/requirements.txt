@@ -1,0 +1,20 @@
+# ============================================================
+# frontend/requirements.txt
+# ============================================================
+# Python packages for the Streamlit frontend.
+# ============================================================
+
+# Streamlit builds the entire web UI with pure Python
+streamlit==1.35.0
+
+# requests makes HTTP calls to the FastAPI backend
+requests==2.31.0
+
+# pandas organises data into tables for display
+pandas==2.2.2
+
+# plotly draws the charts on the dashboard
+plotly==5.22.0
+
+# reads .env file for local development
+python-dotenv==1.0.1

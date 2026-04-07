@@ -1,0 +1,47 @@
+# ==============================================================
+# .gitignore
+# ==============================================================
+# Files listed here are NEVER uploaded to GitHub.
+# This is critical for security — .env files contain passwords!
+# ==============================================================
+
+# ── Environment files (NEVER commit these) ───────────────────
+.env
+backend/.env
+frontend/.env
+*.env
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.pyc
+
+# ── Virtual environments ──────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ── SQLite local database ─────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Backup files ─────────────────────────────────────────────
+backup_*.sql
+backup_*.dump
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+
+# ── IDE files ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
